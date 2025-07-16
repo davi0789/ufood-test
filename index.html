@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: MetronicProduct Version: 8.2.5
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="es">
+	<!--begin::Head-->
+	<head>
+		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
+		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes" />
+		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:site_name" content="Metronic by Keenthemes" />
+		<link rel="canonical" href="http://index.html" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Vendor Stylesheets(used for this page only)-->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Vendor Stylesheets-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Stylesheets Bundle-->
+		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-toolbar-enabled="true" class="app-default">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::App-->
+		<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+			<!--begin::Page-->
+			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+				<!--begin::Header-->
+				<div id="kt_app_header" class="app-header align-items-stretch">
+					<!--begin::Header container-->
+					<div class="app-container container-fluid d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
+						<!--begin::Header-->
+						<div class="d-flex align-items-center justify-content-between flex-row-fluid" id="kt_app_header_wrapper">
+							<!--begin::Header logo-->
+							<div class="app-header-logo d-flex align-items-center">
+								<!--begin::Header mobile toggle-->
+								<div class="d-flex align-items-center d-lg-none ms-n2 me-2" title="Show sidebar menu">
+									<div class="btn btn-icon btn-active-color-primary w-35px h-35px" id="kt_app_header_menu_toggle">
+										<i class="ki-outline ki-abstract-14 fs-2"></i>
+									</div>
+								</div>
+								<!--end::Header mobile toggle-->
+								<!--begin::Logo image-->
+								<a href="index.html" class="me-5 me-lg-9">
+									<img alt="Logo" src="assets/media/logos/demo53.svg" class="h-25px h-lg-30px theme-light-show" />
+									<img alt="Logo" src="assets/media/logos/demo53-dark.svg" class="h-25px h-lg-30px theme-dark-show" />
+								</a>
+								<!--end::Logo image-->
+							</div>
+							<!--end::Header logo-->
+							<!--begin::Header menu toggle-->
+							<div class="d-flex align-items-stretch" id="kt_app_header_menu_wrapper">
+								<!--begin::Menu holder-->
+								<div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_menu_wrapper'}">
+									<!--begin::Menu-->
+									<div class="menu menu-rounded menu-column menu-lg-row menu-active-bg menu-title-gray-600 menu-state-primary menu-arrow-gray-500 fw-semibold fw-semibold fs-6 align-items-stretch my-5 my-lg-0 px-2 px-lg-0" id="#kt_app_header_menu" data-kt-menu="true">
+										<!--begin:Menu item-->
+										<div class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
+											<!--begin:Menu link-->
+											<span class="menu-link">
+												<span class="menu-icon">
+													<i class="ki-outline ki-add-notepad fs-1"></i>
+												</span>
+												<span class="menu-title">Nueva Orden</span>
+												<span class="menu-arrow d-lg-none"></span>
+											</span>
+											<!--end:Menu link-->
+										</div>
+										<!--end:Menu item-->
+										<!--begin:Menu item-->
+										<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" data-kt-menu-offset="12,0" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
+											<!--begin:Menu link-->
+											<span class="menu-link">
+												<span class="menu-icon">
+													<i class="fa-regular fa-user fs-2"></i>
+												</span>
+												<span class="menu-title">Nombre de Usuario</span>
+												<span class="menu-arrow d-lg-none"></span>
+											</span>
+											<!--end:Menu link-->
+											<!--begin:Menu sub-->
+											<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px">
+												<!--begin:Menu item-->
+												<div class="menu-item">
+													<!--begin:Menu link-->
+													<a class="menu-link" data-bs-trigger="hover" >
+														<span class="menu-icon">
+															<i class="fa-solid fa-utensils fs-2"></i>
+														</span>
+														<span class="menu-title">Ordenes</span>
+													</a>
+													<!--end:Menu link-->
+												</div>
+												<!--end:Menu item-->
+												<!--begin:Menu item-->
+												<div class="menu-item">
+													<!--begin:Menu link-->
+													<a class="menu-link" data-bs-trigger="hover">
+														<span class="menu-icon">
+															<i class="ki-outline ki-add-notepad fs-2"></i>
+														</span>
+														<span class="menu-title">Nueva Orden</span>
+													</a>
+													<!--end:Menu link-->
+												</div>
+												<!--end:Menu item-->
+												<!--begin::Menu separator-->
+												<div class="separator my-2"></div>
+												<!--end::Menu separator-->
+												<!--begin:Menu item-->
+												<div class="menu-item">
+													<!--begin:Menu link-->
+													<a class="menu-link" data-bs-trigger="hover" >
+														<span class="menu-icon">
+															<i class="fa-solid fa-unlock-keyhole fs-2"></i>
+														</span>
+														<span class="menu-title">Cerrar Sesión</span>
+													</a>
+													<!--end:Menu link-->
+												</div>
+												<!--end:Menu item-->
+											</div>
+											<!--end:Menu sub-->
+										</div>
+										<!--end:Menu item-->
+									</div>
+									<!--end::Menu-->
+								</div>
+								<!--end::Menu holder-->
+							</div>
+							<!--end::Header menu toggle-->
+						</div>
+						<!--end::Header-->
+					</div>
+					<!--end::Header container-->
+				</div>
+				<!--end::Header-->
+				
+				<!--begin::Wrapper-->
+				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+						<!--begin::Content wrapper-->
+						<div class="d-flex flex-column-fluid pt-10">
+							<!--begin::Container-->
+							<div class="d-flex flex-column flex-column-fluid container-fluid">
+								<!--begin::Content-->
+								<div class="content flex-column-fluid" id="kt_content" >	
+									<!--begin::details View-->
+									<div class="card mb-5 mb-xl-10" id="" style="border: 1px solid #337ab7;">
+										<!--begin::Card header-->
+										<div class="card-header" style="background-color: #337ab7; color: #fff;">
+											<div class="card-title">
+												<h3 class="card-label" style="margin: 0; color: #fff;">Ordenes</h3>
+											</div>
+											<div class="card-toolbar">
+												<button id="ordenes-table-refresh" class="btn btn-default btn-active-primary" aria-label="Refrescar tabla de órdenes" title="Refrescar" style="color: #fff;">
+													<i class="fa-solid fa-arrows-rotate fs-2" style="color: #fff;"></i>
+												</button>
+											</div>
+										</div>
+										<!--end::Card header-->
+										<!--begin::row body-->
+										<div class="row">
+											<!--begin::Card body-->
+											<div class="card-body">
+																<div id="ordenes-table-wrapper">
+																	<div class="row mb-4">
+																		<div class="col-sm-12 col-lg-12 col-xs-12">
+																			<label class="text-lg">Busqueda:</label> <span class="required"></span>
+																		</div>
+																		<div class="col-sm-4 col-lg-4 col-xs-12">
+																			<input type="text" placeholder="Escriba el nombre del Cliente" class="form-control input-lg" id="ordenes-buscar-text">
+																		</div>
+																		<div class="col-sm-4 col-lg-4 col-xs-12">
+																			<select class="form-select form-control input-lg" id="">
+																				<option value="0">Todas las Mesas</option>
+																				<option value="1">Mesa 1</option>
+																				<option value="2">Mesa 2</option>
+																			</select>
+																		</div>
+																		
+																		<div class="col-sm-4 col-lg-4 col-xs-12">
+																			<select class="form-select form-control input-lg" id="">
+																				<option value="0">Todas las ordenes</option>
+																				<option value="1">Mesa</option>
+																				<option value="2">Mesero</option>
+																			</select>
+																			
+																		</div>
+																	</div>
+																	<table id="table-ordenes" class="table table-hover table-vcenter table-bordered">
+																		<thead>
+																			<tr>
+																				<th>Mesa</th>
+																				<th>Mesero</th>
+																				<th>Cliente</th>
+																				<th>Total</th>
+																				<th>Acciones</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>Mesa 1</td>
+																				<td>Admin</td>
+																				<td>Sandra</td>
+																				<td>$25.00</td>
+																				<td class="text-center">
+																					<div>
+																						<button class="btn btn-primary me-1">Editar</button>
+																						<button class="btn btn-success me-1">Detalle</button>
+																						<button class="btn btn-warning me-1">Imprimir Precuenta</button>
+																					</div>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>Mesa 2</td>
+																				<td>Juan</td>
+																				<td>Pedro</td>
+																				<td>$30.00</td>
+																				<td class="text-center">
+																					<div >
+																						<button class="btn btn-primary me-1">Editar</button>
+																						<button class="btn btn-success me-1">Detalle</button>
+																						<button class="btn btn-warning me-1">Imprimir Precuenta</button>
+																					</div>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>Mesa 3</td>
+																				<td>Juan</td>
+																				<td>Pedro</td>
+																				<td>$30.00</td>
+																				<td class="text-center">
+																					<div >
+																						<button class="btn btn-primary me-1">Editar</button>
+																						<button class="btn btn-success me-1">Detalle</button>
+																						<button class="btn btn-warning me-1">Imprimir Precuenta</button>
+																					</div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+											</div>
+											<!--end::Card body-->
+										</div>
+										<!--end::row body-->
+									</div>
+									<!--end::details View-->						
+								</div>
+								<!--end::Content-->
+							</div>
+							<!--end::Container-->	
+						</div>
+						<!--end::Content wrapper-->
+				</div>	
+				<!--end::Wrapper-->
+
+				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+					<!--begin::Content wrapper-->
+					<div class="d-flex flex-column-fluid pt-5">
+						<!--begin::Container-->
+						<div class="d-flex flex-column flex-column-fluid container-fluid">
+							<!--begin::Content-->
+							<div class="content flex-column-fluid" id="kt_content" >	
+								<div class="row " id="nuevaOrdenContainer">
+									<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+										<div class="card card-custom card-shadowless" style="border: 1px solid #337ab7;">
+											<div class="card-header" style="background-color: #337ab7; color: #fff;">
+												<h3 class="card-title align-items-start flex-column d-none d-md-flex" id="nueva-orden-panel-title">
+													<span class="card-label fw-bold text-white">Nueva Orden</span>
+												</h3>
+												<div class="card-toolbar"> 
+													<ul class="nav nav-tabs nav-bold nav-tabs-line" > 
+
+														<li class="nav-item"> 
+															<a class="nav-link active" data-bs-toggle="tab" href="#demo-tabs-box-1" id="nueva-orden-tab-1-btn" 
+															style="font-size: 18px; 
+															--bs-nav-link-color: #fff; 
+															--bs-nav-link-hover-color: #fff; 
+															border: none;">Servicio</a>
+														</li> 
+														<li class="nav-item"> 
+															<a class="nav-link" data-bs-toggle="tab" href="#demo-tabs-box-2" id="nueva-orden-tab-2-btn" 
+															style="font-size: 18px; 
+															--bs-nav-link-color: #fff; 
+															--bs-nav-link-hover-color: #fff; 
+															border: none;">Mesa</a>
+														</li> 
+														<li class="nav-item"> 
+															<a class="nav-link" data-bs-toggle="tab" href="#demo-tabs-box-3" id="nueva-orden-tab-3-btn" 
+															style="font-size: 18px; 
+															--bs-nav-link-color: #fff; 
+															--bs-nav-link-hover-color: #fff; 
+															border: none;">Menú</a> 
+														</li> 
+													</ul> 
+												</div>
+											</div>
+											<div class="card-body" id="">
+												<div class="tab-content">
+													<div class="tab-pane active" id="demo-tabs-box-1">
+														<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+															<h4 class="text-dark font-weight-bold mb-4 border-bottom">Meseros</h4>
+															<div id="nueva-orden-meseros-wrapper" class="nueva-orden-togglesbtn" style="overflow-y:auto; height:220px;">
+																<div class="row g-0">
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" type="button" class="btn btn-secondary btn-lg w-100 text-center" data-id="1" data-nombre="Mesero 1">Mesero 1</button>
+																	</div>
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" type="button" class="btn btn-secondary btn-lg w-100 text-center" data-id="2" data-nombre="Mesero 2">Mesero 2</button>
+																	</div>
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" type="button" class="btn btn-secondary btn-lg w-100 active text-center" data-id="3" data-nombre="Mesero 3">Mesero 3</button>
+																	</div>
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" type="button" class="btn btn-secondary btn-lg w-100 text-center" data-id="4" data-nombre="Mesero 4">Mesero 4</button>
+																	</div>
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" type="button" class="btn btn-secondary btn-lg w-100 text-center" data-id="5" data-nombre="Mesero 5">Mesero 5</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+															<h4 class="text-dark font-weight-bold mb-4 border-bottom">Servicio</h4>
+															<div id="nueva-orden-servicio-wrapper" class="nueva-orden-togglesbtn" style="overflow-y:auto;height:115px;">
+																<div class="row g-0">
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" class="btn btn-block btn-lg btn-secondary active btn-lg w-100" type="button" data-tipo="0">En Restaurante</button>
+																	</div>
+																	<div class="col-md-4 mb-4 px-2">
+																		<button data-toggle="button" class="btn btn-block btn-lg btn-secondary btn-lg w-100" type="button" data-tipo="1">Para llevar</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+															<h4 class="text-dark font-weight-bold mb-4 border-bottom">Restaurante</h4>
+															<div id="nueva-orden-restaurantes-wrapper" class="nueva-orden-togglesbtn"  style="overflow-y:auto;height:115px;" >
+																<div class="row g-0">
+																	<div class="col-md-4 mb-4 btn-salon px-2">
+																		<button type="button" class="btn btn-block btn-lg btn-secondary active btn-lg w-100" data-toggle="button" data-id="1" data-nombre="Restaurante 1">Restaurante 1</button>
+																	</div>
+																	<div class="col-md-4 mb-4 btn-salon px-2">
+																		<button type="button" class="btn btn-block btn-lg btn-secondary btn-lg w-100" data-toggle="button" data-id="2" data-nombre="Restaurante 2">Restaurante 2</button>
+																	</div>
+																</div>
+																
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="demo-tabs-box-2">
+														<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+															<h4 class="text-dark font-weight-bold mb-4 border-bottom">Zona</h4>
+															<div id="nueva-orden-salones-wrapper" class="nueva-orden-togglesbtn"  style="overflow-y:auto;height:175px;" >
+																<div class="row g-0">
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-salon px-2">
+																		<button type="button" class="btn btn-block btn-lg btn-secondary active btn-lg w-100" data-toggle="button" data-id="1" data-nombre="Salon 1">Salon 1</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-salon px-2">
+																		<button type="button" class="btn btn-block btn-lg btn-secondary btn-lg w-100" data-toggle="button" data-id="2" data-nombre="Salon 2">Salon 2</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-salon px-2">
+																		<button type="button" class="btn btn-block btn-lg btn-secondary btn-lg w-100" data-toggle="button" data-id="3" data-nombre="Salon 3">Salon 3</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+															<h4 class="text-dark font-weight-bold mb-4 border-bottom">Mesa</h4>
+															<div id="nueva-orden-mesas-wrapper" class="nueva-orden-togglesbtn" style="height:400px;overflow-y:auto;">
+																<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-end mb-4">
+																	<span class="badge badge-dark text-bold">Vacia</span>
+																	<span class="badge badge-primary text-bold">En Proceso</span>
+																	<span class="badge text-bold" style="background-color: #2396aa; color: #ffffff;">Servida</span>
+																	<span class="badge badge-warning text-bold">Precuenta</span>
+																	<span class="badge badge-success text-bold">Facturada</span>
+																	<span class="badge badge-danger text-bold">No Disponible</span>
+																	<span class="badge badge-info text-bold">Reservada</span>
+																</div>
+																<div class="row g-0">
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-secondary " type="button" data-toggle="button" data-salon="1" data-id="1" data-nombre="Mesa 1">Mesa 1</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-info active" type="button" data-toggle="button" data-salon="1" data-id="2" data-nombre="Mesa 2">Mesa 2</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-success" type="button" data-toggle="button" data-salon="1" data-id="3" data-nombre="Mesa 3">Mesa 3</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-warning" type="button" data-toggle="button" data-salon="1" data-id="4" data-nombre="Mesa 4">Mesa 4</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-success" type="button" data-toggle="button" data-salon="1" data-id="5" data-nombre="Mesa 5">Mesa 5</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-danger" type="button" data-toggle="button" data-salon="1" data-id="6" data-nombre="Mesa 6">Mesa 6</button>
+																	</div>
+																	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 mb-4 btn-mesa px-2">
+																		<button class="btn btn-block btn-lg w-100 btn-secondary" type="button" data-toggle="button" data-salon="1" data-id="7" data-nombre="Mesa 7">Mesa 7</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="demo-tabs-box-3">
+														<!--Modo de vista y seleccion del menu-->
+														<div class="row">
+															<!--Modo de vista del menu-->
+															<div class="col-6 text-left border-right" id="nueva-orden-menu-mode-view-wrapper">
+																<!--begin::toolbar 1-->
+																<div class="card-toolbar">
+																	<div class="d-flex justify-content-start" data-kt-customer-table-toolbar="base">
+																		<!--begin::Nav group-->
+																		<div class="nav w-auto p-1 rounded" data-kt-buttons="true">
+																			<!--begin::Nav link-->
+																			<button type="button" class="nav-link btn btn-active btn-active-success fw-bold btn-color-gray-600 active p-2" data-bs-toggle="tab" role="tab" href="#kt_menu">
+																				<i class="ki-duotone ki-element-1 fs-1">
+																					<span class="path1"></span>
+																					<span class="path2"></span>
+																					<span class="path3"></span>
+																					<span class="path4"></span>
+																				</i>
+																				<span>Menu</span>
+																			</button>
+																			<!--end::Nav link-->
+																			<!--begin::Nav link-->
+																			<button type="button" class="nav-link btn btn-active btn-active-success fw-bold btn-color-gray-600  p-2" data-bs-toggle="tab" role="tab" href="#kt_lista_menu">
+																				<i class="ki-duotone ki-element-8 fs-1">
+																					<span class="path1"></span>
+																					<span class="path2"></span>
+																				</i>
+																				<span>Lista</span>
+																			</button>
+																			<!--end::Nav link-->
+
+																		</div>
+																		<!--end::Nav group-->
+																	</div>
+																</div>
+																<!--end::toolbar 1-->
+															</div>
+															<!--Menus-->
+															<div class="col-6 text-left nueva-orden-togglesbtn nueva-orden-changemenup" id="nueva-orden-menus-wrapper">
+																<!--begin::toolbar 1-->
+																<div class="card-toolbar">
+																	<div class="d-flex justify-content-start" data-kt-customer-table-toolbar="base">
+																		<!--begin::Nav group-->
+																		<div class="nav w-auto bg-light border-1 p-1 rounded" data-kt-buttons="true">
+																			<!--begin::Nav link-->
+																			<button class="nav-link btn btn-active btn-active-success fw-bold btn-color-gray-600 active p-2" data-bs-toggle="tab" role="tab" href="#kt_menu">
+																				<i class="fa fa-cutlery fs-1"></i>
+																				<span>Principal</span>
+																			</button>
+																			<!--end::Nav link-->
+																			<!--begin::Nav link-->
+																			<button class="nav-link btn btn-active btn-active-success fw-bold btn-color-gray-600  p-2" data-bs-toggle="tab" role="tab" href="#kt_lista_menu">
+																				<i class="fa fa-cutlery fs-1"></i>
+																				<span>Bebidas</span>
+																			</button>
+																			<!--end::Nav link-->
+
+																		</div>
+																		<!--end::Nav group-->
+																	</div>
+																</div>
+																<!--end::toolbar 1-->	
+															</div>
+														</div>
+														<!--Menu o lista de platos-->
+														<div class="row">
+															<div id="nueva-orden-menu-wrapper" class="mt-4">
+																<!--------------------MODO LISTA---------------------->
+																<div class="row" id="nueva-orden-modo-lista-wrapper" >
+																	<!--Buscar y agregar producto-->
+																	<div class="form-group">
+																		<!--Producto txt-->
+																		<div class="row mb-3">
+																			<div class="col-sm-8">
+																				<div class="input-group mb-5" style="">
+																					<input
+																						type="text"
+																						class="form-control"
+																						id="nueva-orden-lista-plato-txt"
+																						placeholder="Producto"
+																					/>
+																					<span class="input-group-text p-0" style="border: none;">
+																						<button
+																						class="btn btn-danger d-flex align-items-center justify-content-center"
+																						id="nueva-orden-lista-plato-clear"
+																						type="button"
+																						style="background-color: #F8285A; border-color: #F8285A; color: white; border-radius: 0 0.375rem 0.375rem 0; transition: background-color 0.3s ease; width: 3rem; height: 100%;"
+																						onmouseover="this.style.backgroundColor='#b30000'; this.style.borderColor='#b30000';"
+																						onmouseout="this.style.backgroundColor='#F8285A'; this.style.borderColor='#F8285A';"
+																						aria-label="Limpiar campo de producto"
+																						>
+																						<i class="fa fa-times"></i>
+																						</button>
+																					</span>
+																				</div>
+																			</div>
+																			<!--Producto cant-->
+																			<div class="col-sm-2">
+																				<input type="number" id="nueva-orden-lista-plato-cant-txt" class="form-control" placeholder="Cantidad" value="1">
+																			</div>
+																			<div class="col-sm-2">
+																				<button class="btn btn-primary" id="nueva-orden-lista-agregar-btn">Agregar</button>
+																			</div>
+																			<div class="clearfix"></div>
+																		</div>
+																	</div>
+																	<!---->
+																	<div id="nueva-orden-lista-platos-wrapper" style="overflow-y:auto;height:500px">
+																		<table class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bold">
+																			<thead class="fs-7 text-gray-500 text-uppercase">
+																				<tr>
+																					<th class="min-w-auto">Producto</th>
+																					<th class="min-w-auto">Menú - Categoría</th>
+																				</tr>
+																			</thead>
+																			<tbody class="fs-6">
+																				<tr>
+																					<td class="fw-bold">
+																						<a href="#" class="text-gray-900 ">Ejemplo Producto 1</a>
+																					</td>
+																					<td>
+																						<span class="badge badge-light fw-semibold me-auto fs-7 py-2 px-3 rounded-pill">Menú 1 - Categoría A</span>
+																					</td>
+																					</tr>
+																					<tr>
+																					<td class="fw-bold">
+																						<a href="#" class="text-gray-900 ">Ejemplo Producto 2</a>
+																					</td>
+																					<td>
+																						<span class="badge badge-light fw-semibold me-auto fs-7 py-2 px-3 rounded-pill">Menú 2 - Categoría B</span>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																<!--------------------/MODO LISTA--------------------->
+																<!--------------------MODO MENU---------------------->
+																<div class="row" id="nueva-orden-modo-menu-wrapper" style="display: none;">
+																	<!-- Categorías del menú -->
+																	<div class="col-12 col-lg-3 border rounded bg-light overflow-auto h-25 h-lg-100">
+																		<div class="py-2 nueva-orden-togglesbtn" id="nueva-orden-categorias-wrapper">
+
+																		<button type="button" class="btn btn-secondary btn-lg w-100 mb-2 text-center" data-menu="1" data-id="1">
+																			Categoría 1
+																		</button>
+																		<button type="button" class="btn btn-secondary btn-lg w-100 mb-2 text-center" data-menu="1" data-id="2">
+																			Categoría 2
+																		</button>
+																		<button type="button" class="btn btn-secondary btn-lg w-100 mb-2 text-center" data-menu="2" data-id="3">
+																			Categoría 3
+																		</button>
+																		<button type="button" class="btn btn-secondary btn-lg w-100 mb-2 text-center" data-menu="2" data-id="4">
+																			Categoría 4
+																		</button>
+																		<button type="button" class="btn btn-secondary btn-lg w-100 mb-2 text-center" data-menu="3" data-id="5">
+																			Categoría 5 con texto más largo para prueba de ajuste de línea
+																		</button>
+																		<!-- Añade más botones según sea necesario -->
+																		</div>
+																	</div>
+
+																	<!-- Platos de la categoria -->
+																	<div class="col-sm-12 col-lg-9 col-md-12 col-xs-12">
+																		<!-- Selector de cantidad de platos -->
+																		<div class="form-group py-2">
+																			<div class="row">
+																				<label class="col-form-label col-lg-4 col-sm-4 col-md-4 col-xs-4">Cantidad de Platos</label>
+																				<div class="col-lg-4 col-sm-6 col-md-6 col-xs-8">
+																					<div class="input-group">
+																						<!--begin::Dialer-->
+																						<div
+																						class="position-relative d-flex align-items-center"
+																						data-kt-dialer="true"
+																						data-kt-dialer-min="1"
+																						data-kt-dialer-decimals="0"
+																						>
+																						<!--begin::Decrease control-->
+																						<button
+																							type="button"
+																							class="btn btn-icon btn-sm btn-outline-danger btn-icon-gray-500"
+																							data-kt-dialer-control="decrease"
+																							data-function="less"
+																							id="norden-menu-cant-platos-less"
+																						>
+																							<i class="fa fa-minus fs-4"></i>
+																						</button>
+																						<!--end::Decrease control-->
+																						<!--begin::Input control-->
+																						<input
+																							type="text"
+																							class="form-control border-0 text-center fs-5 fw-bold text-gray-800 w-35px p-2"
+																							data-kt-dialer-control="input"
+																							placeholder="Cantidad"
+																							value="1"
+																							id="norden-menu-cant-platos"
+																							name="manageBudget"
+																							onkeypress=""
+																						/>
+																						<!--end::Input control-->
+																						<!--begin::Increase control-->
+																						<button
+																							type="button"
+																							class="btn btn-icon btn-sm btn-outline-success btn-icon-gray-500"
+																							data-kt-dialer-control="increase"
+																							data-function="add"
+																							id="norden-menu-cant-platos-add"
+																						>
+																							<i class="fa fa-plus fs-4"></i>
+																						</button>
+																						<!--end::Increase control-->
+																						</div>
+																						<!--end::Dialer-->
+																					</div>
+																				</div>
+																				<div class="clearfix"></div>
+																			</div>
+																		
+																		</div>
+
+																		<!-- Contenedor de platos -->
+																		
+																		<div class="row">
+																		<div class="py-2" id="nueva-orden-platos-wrapper" style="overflow-y: auto; height: 300px;">
+																			<!-- Mensaje de selección de categoría -->
+																			<div class="card bg-light text-center p-3 mb-3" id="nueva-orden-selcat-msg-wrapper">
+																			<div class="icon-description row">
+																				<!--begin::Icon-->
+																				<div class="text-center card-rounded d-flex flex-column flex-center p-10 h-100">
+																				<i class="fa-solid fa-arrow-left fs-5tx"></i>
+																				<!--end::Icon-->
+
+																				<!--begin::Description-->
+																				<div class="text-gray-700 fs-5 fw-semibold"> Seleccione una categoría <br />
+																					<small>Haga clic sobre una categoría para mostrar los platos que contiene.</small>
+																				</div>
+																				</div>
+																				<!-- end::Description-->
+																			</div>
+																			</div>
+
+																			<div class="row">
+																			<div class="col-12 col-sm-6 col-md-4 mb-2">
+																				<button
+																				type="button"
+																				class="btn btn-secondary font-weight-bold w-100"
+																				data-categoria="1"
+																				data-id="1"
+																				data-acompanamientos="[]"
+																				data-notas="[]"
+																				data-precio="10.00"
+																				data-tipo="0"
+																				style="height: 75px; white-space: normal; font-size: 145%; line-height: 115%;"
+																				>
+																				Plato 1
+																				</button>
+																			</div>
+																			<div class="col-12 col-sm-6 col-md-4 mb-2">
+																				<button
+																				type="button"
+																				class="btn btn-block btn-secondary font-weight-bold w-100"
+																				data-categoria="1"
+																				data-id="2"
+																				data-acompanamientos="[]"
+																				data-notas="[]"
+																				data-precio="12.00"
+																				data-tipo="0"
+																				style="height: 75px; white-space: normal; font-size: 145%; line-height: 115%;"
+																				>
+																				Plato 2
+																				</button>
+																			</div>
+																			<div class="col-12 col-sm-6 col-md-4 mb-2">
+																				<button
+																				type="button"
+																				class="btn btn-block btn-secondary font-weight-bold w-100"
+																				data-categoria="2"
+																				data-id="3"
+																				data-acompanamientos="[]"
+																				data-notas="[]"
+																				data-precio="15.00"
+																				data-tipo="0"
+																				style="height: 75px; white-space: normal; font-size: 145%; line-height: 115%;"
+																				>
+																				Plato 3
+																				</button>
+																			</div>
+																			<!-- Agrega más botones según sea necesario -->
+																			</div>
+																		</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<!--------------------/MODO MENU--------------------->
+																<!--Valores del plato a agregar-->
+																<input id="nueva-orden-agregar-plato-id" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-categoria" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-cant" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-nombre" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-precio" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-acompanamientos" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-notas" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-modo" type="hidden" value="">
+																<input id="nueva-orden-agregar-plato-tipo" type="hidden" value="">
+																<!--Valores de edicion-->
+																<input id="nueva-orden-id" type="hidden" value="">
+																<input id="nueva-orden-numero" type="hidden" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+										<div class="card card-custom card-shadowless" style="border: 1px solid #337ab7;">
+											<div class="card-header" style="background-color: #337ab7; color: #fff;">
+												<h3 class="card-title align-items-start flex-column d-none d-md-flex" id="nueva-orden-panel-title">
+													<span class="card-label fw-bold text-white">Detalle</span>
+												</h3>
+											</div>
+											<div class="card-body" id="nueva-orden-detalles-main-wrapper">
+												<div class="row">
+													<!--Herramientas de la orden-->
+													<div class="col-md-2 text-center">
+														<div class="row g-2 justify-content-center">
+															<div class="col-6">
+																<button
+																	class="btn btn-primary mar-btm pad-all"
+																	id="nueva-orden-herramientas-aumentar"
+																	disabled="disabled"
+																	style="height: 60px; width: 55px; border-radius: 20%;">
+																	<i class="fa fa-plus-circle fs-4"></i>
+																</button>
+															</div>
+
+															<div class="col-6">
+																<button 
+																class="btn btn-warning mar-btm pad-all ms-3" id="nueva-orden-herramientas-disminuir" 
+																disabled="disabled" 
+																style="height: 60px; width: 55px; border-radius: 20%;">
+																<i class="fa fa-minus-circle fs-4"></i>
+																</button>
+															</div>
+															<div class="col-6">
+																<button 
+																class="btn btn-success mar-btm pad-all" id="nueva-orden-herramientas-notas" 
+																disabled="disabled"
+																style="height: 60px; width: 55px; border-radius: 20%;">
+																<i class="fa fa-pencil fs-4"></i>
+																</button>
+															</div>
+															<div class="col-6">
+																<button class="btn btn-danger mar-btm pad-all ms-3" id="nueva-orden-herramientas-eliminar" 
+																disabled="disabled"
+																style="height: 60px; width: 55px; border-radius: 20%;">
+																<i class="fa fa-trash fs-4"></i>
+																</button>
+															</div>
+														</div>
+													</div>
+													<!--Tabla de la orden y cliente-->
+													<div class="col-md-10">
+														<div class="ms-3">
+															<!--Encabezado tabla-->
+															<table class="table table-hover table-vcenter bg-secondary" style="margin: 0; padding: 0;">
+																<thead style="" class="bg-secondary text-black fw-bold">
+																	<tr>
+																		<th class="text-center" width="10%">Cant</th>
+																		<th class="text-center" width="45%">Plato</th>
+																		<th class="text-center" width="15%">Precio</th>
+																		<th class="text-center" width="15%">Total</th>
+																		<th class="text-center" width="15%"></th>
+																	</tr>
+																</thead>
+															</table>
+															<!--tabla-->
+															<div class="border-all border border-1 color-border-gray " style="overflow-y:auto; height:300px; " id="nueva-orden-platos-tabla-wrapper">
+																<table class="table table-hover" id="nueva-orden-platos-tabla">
+																	<tbody>
+																		<tr id="" class="not-active" data-id="1" data-cant="1" data-nombre="Plato 1" data-precio="10.00" data-total="10.00" data-acompanamientos="" data-acompanamientosstr="" data-prenotas="" data-notas="" data-enviado="1" data-cantenviados="1" data-tipo="0">
+																			<td class="plato-cant-field text-center text-semibold" width="10%">1</td>
+																			<td class="plato-nombre-field text-left" width="50%"><span class="text-semibold">Plato 1</span></td>
+																			<td class="plato-precio-field text-center " width="15%">10.00</td>
+																			<td class="plato-total-field text-center " width="20%">10.00</td>
+																			<td width="5%"><span class="badge bg-success text-white ms-n3">SI</span></td>
+																		</tr>
+																		<tr id="" class="not-active" data-id="2" data-cant="2" data-nombre="Plato 2" data-precio="15.00" data-total="30.00" data-acompanamientos="" data-acompanamientosstr="" data-prenotas="" data-notas="" data-enviado="1" data-cantenviados="2" data-tipo="0">
+																			<td class="plato-cant-field text-center text-semibold" width="10%">2</td>
+																			<td class="plato-nombre-field text-left" width="50%"><span class="text-semibold">Plato 2</span></td>
+																			<td class="plato-precio-field text-center " width="15%">15.00</td>
+																			<td class="plato-total-field text-center " width="20%">30.00</td>
+																			<td width="5%"><span class="badge bg-success text-white ms-n3">SI</span></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!--Cliente-->
+														<div class="form-group mt-4 ms-3">
+															<input type="text" placeholder="Cliente" class="form-control" id="nueva-orden-cliente-nombre" value="">
+														</div>
+														<!--Notas-->
+														<div class="form-group mt-4 mb-5 ms-3">
+															<input type="text" placeholder="Notas" class="form-control" id="nueva-orden-notas" value="">
+														</div>
+													</div>
+												</div>
+												<div class="row border-top">
+													<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+														<table class="table mar-no text-right ufood-transaccion-table">
+															<tbody>
+																<tr id="nueva-orden-totales-subtotal" class="border-bottom">
+																	<td class="text-semibold py-1"><h4 class="text-end mb-1">SUBTOTAL</h4></td>
+																	<td class="text-semibold py-1"><h4 class="mb-1 text-end">$</h4></td>
+																	<td class="text-semibold total-value py-1"><h4 class="mb-1 text-end">0.00</h4></td>
+																</tr>
+																<tr id="nueva-orden-totales-propina" class="border-bottom">
+																	<td class="text-semibold py-1"><h4 class="text-end mb-1">PROPINA</h4></td>
+																	<td class="text-semibold py-1"><h4 class="mb-1 text-end">$</h4></td>
+																	<td class="text-semibold total-value py-1"><h4 class="mb-1 text-end">0.00</h4></td>
+																</tr>
+																<tr id="nueva-orden-totales-total">
+																	<td class="text-semibold py-1"><h4 class="text-end mb-1">TOTAL</h4></td>
+																	<td class="text-semibold py-1"><h4 class="mb-1 text-end">$</h4></td>
+																	<td class="text-semibold total-value py-1"><h4 class="mb-1 text-end">0.00</h4></td>
+																</tr>
+															</tbody>
+														</table>
+
+													</div>
+												</div>
+												<div class="row text-center hidden-xs">
+													<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+														<button type="button" id="nueva-orden-guardar-btn" class="btn btn-lg btn-success btn-labeled">
+															<i class="fa fa-save mar-top fs-2"></i>
+															<span>Guardar</span>
+														</button>
+														<button type="button" id="nueva-orden-salir-btn" class="btn btn-danger btn-lg btn-labeled">
+															<i class="fa fa-window-close mar-top fs-2"></i>
+															<span>Salir</span>
+														</button>
+														
+														<button type="button" id="nueva-orden-nueva-btn" class="btn btn-primary btn-lg btn-labeled">
+															<i class="fa fa-file mar-top fs-2"></i>
+															<span>Nueva</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--MODALES-->
+									<div id="nueva-orden-modals-wrapper">
+										<!--Acompanamientos modal-->
+										<div class="modal" id="nueva-orden-acompanamientos-plato" data-parent="#nuevaOrdenContainer" role="dialog" tabindex="-1" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+														<h4 class="modal-title">Acompa&ntilde;amientos y notas de <b></b></h4>
+													</div>
+													<div class="modal-body bg-gray">
+														<div class="row">
+															<!--Acompanamientos-->
+															<div id="nueva-orden-acomp-col" class="col-sm-6">
+																<div class="panel">
+																	<div class="panel-heading">
+																		<h3 class="panel-title">Acompa&ntilde;amientos</h3>
+																	</div>
+																	<div class="panel-body">
+																		<div id="nueva-orden-acompanamientos-wrapper" style="height:225px; overflow-y:auto;"></div>
+																		<div class="clearfix"></div>
+																	</div>
+																</div>
+															</div>
+															<!--Notas-->
+															<div id="nueva-orden-notas-col" class="col-sm-6">
+																<div class="panel">
+																	<div class="panel-heading">
+																		<h3 class="panel-title">Notas</h3>
+																	</div>
+																	<div class="panel-body">
+																		<div class="form-control" id="nueva-orden-notas-txt" rows="3" contenteditable="true" style="height:150px;overflow-y:scroll;">
+																		</div>
+																		<div class="mar-top" id="nueva-orden-acompanamientos-notas-wrapper" style="height:150px;overflow-y:auto;">
+																			<div class="col-sm-6" id="nueva-orden-notas-wrapper-1"></div>
+																			<div class="col-sm-6" id="nueva-orden-notas-wrapper-2"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+														<div class="row text-center mar-top">
+															<button type="button" class="btn btn-lg btn-info" id="nueva-orden-acompanamientos-notas-continuar-btn">Continuar</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--Confirmar Modal-->
+										<div class="modal" id="nueva-orden-confirmar-guardar" data-parent="#nuevaOrdenContainer" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">Confirmar</h4>
+													</div>
+													<div class="modal-body">
+														<div class="text-center text-info" id="nueva-orden-guardar-state-icon-wrapper" style="font-size:90px;">
+															<i class="fa fa-question-circle-o"></i>
+														</div>
+														<div class="text-center" id="nueva-orden-guardar-state-text-wrapper">
+															<h5 >&iquest;Desea guardar y enviar esta orden a cocina?</h5>
+														</div>
+														<div class="text-center" id="nueva-orden-guardar-state-buttons-wrapper">
+															<button class="btn btn-lg btn-success pad-all" id="nueva-orden-button-guardar">Si Guardar</button>
+															<button class="btn btn-lg btn-success pad-all" id="nueva-orden-button-reintentar">Reintentar</button>
+															<button class="btn btn-lg btn-info pad-all" id="nueva-orden-button-nuevaorden">Nueva orden</button>
+
+															<button class="btn btn-lg btn-danger mar-top mar-btm"  id="nueva-orden-button-cancelar">Cancelar</button>
+															<button class="btn btn-lg btn-danger mar-top mar-btm"  id="nueva-orden-button-salir">Salir</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+					<!--begin::Content wrapper-->
+					<div class="d-flex flex-column-fluid pt-5">
+						<!--begin::Container-->
+						<div class="d-flex flex-column flex-column-fluid">
+							<!--begin::Content-->
+							<div class="content flex-column-fluid" id="kt_content">	
+								<div class="position-relative min-vh-100 d-flex justify-content-center align-items-center" style="background-image: url('assets/media/auth/bg4.jpg'); background-size: cover; background-position: center;">
+									<div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" aria-hidden="true"></div>
+									<div id="container" class="position-relative w-100 px-4"> <!-- Cambiado a w-100 -->
+										<div class="row g-3 justify-content-center">
+											<!-- Ejemplo usuario -->
+											<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+												<div class="card shadow-sm text-center rounded-3">
+													<div class="card-body">
+														<img src="assets/img/default-profile.png" alt="Profile Picture" class="rounded-circle mb-3" style="width:100px; height:100px; object-fit: cover;" />
+														<p class="h5 fw-semibold mb-1 text-primary">Nombre del Usuario</p>
+														<p class="text-muted mb-3">username</p>
+														<button type="button" class="btn btn-success btn-lg w-100" data-id="1" data-pin="1234">Entrar</button>
+													</div>
+												</div>
+											</div>
+											<!-- Repetir bloques similares para cada usuario -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::App-->
+
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<i class="ki-outline ki-arrow-up"></i>
+		</div>
+		<!--end::Scrolltop-->
+		<
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Vendors Javascript(used for this page only)-->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+		<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/widgets.bundle.js"></script>
+		<script src="assets/js/custom/widgets.js"></script>
+		<script src="assets/js/custom/apps/chat/chat.js"></script>
+		<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+</html>
